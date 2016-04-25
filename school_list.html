@@ -1,0 +1,25 @@
+{%- extends "bootstrap/base.html" %}
+{% block html_attribs %} lang="en"{% endblock %}
+{% block title %} A Look Into the Worst Performing Schools in Florida {% endblock %}
+
+{{mymap.js}}
+
+
+{% block content %}
+<div id="container">
+
+<h1> A Look Into the Worst Performing Schools in Florida </h1>
+
+<p> What do the worst performing schools have in common? We wanted to find out. In the state of Florida of 179 schools out of 3338 schools received a F grade. The schools are spread across 33 counties. School grades are calculated based on a point system that differs by elementary, middle, and high school. We took a look at some characteristics to help us discover key similarities.    </p>
+
+
+  {% with map=mymap %}
+    {{map.html}}
+    {{map.js}}
+  {% endwith %}
+
+</div> <!-- close container -->
+{% endblock %}
+
+</body>
+</html>
