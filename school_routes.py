@@ -61,7 +61,7 @@ def get_profile(source, school):
             address = row["Full Address"]
     return district_name, total_points_earned, percent_total, percent_tested, charter, title, alt, minority, disadvan, address
 
-@app.route('/f_schools/')
+@app.route('/')
 def mapview():
     mymap = Map(
         identifier="view-side",
