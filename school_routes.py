@@ -88,5 +88,5 @@ def profile(school):
 		
     return render_template('profile_.html', school=school, district_name=district_name, total_points_earned=total_points_earned, percent_total=percent_total, percent_tested=percent_tested, charter=charter, title=title, alt=alt, minority=minority, disadvan=disadvan, address=address)       
 
-if __name__ == '__main__':
-    app.run(debug=True)
+#if __name__ == '__main__':
+    #app.run(debug=True)
